@@ -1,0 +1,411 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - link "Shubham Yadav home" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e5]: SY
+      - generic [ref=e6]: SHUBHAM YADAV
+    - navigation "Main navigation" [ref=e7]:
+      - link "About" [ref=e8] [cursor=pointer]:
+        - /url: "#about"
+      - link "Skills" [ref=e9] [cursor=pointer]:
+        - /url: "#skills"
+      - link "Projects" [ref=e10] [cursor=pointer]:
+        - /url: "#projects"
+      - link "Experience" [ref=e11] [cursor=pointer]:
+        - /url: "#experience"
+      - link "Contact" [ref=e12] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e13]:
+      - link "Open to opportunities" [ref=e14] [cursor=pointer]:
+        - /url: mailto:yadav5257shubham@gmail.com
+      - button "Switch to dark mode" [ref=e16] [cursor=pointer]
+  - main [ref=e20]:
+    - region [ref=e21]:
+      - generic [ref=e22]:
+        - paragraph [ref=e23]: QUALITY ENGINEERING · MUMBAI / NOIDA
+        - heading "Shubham Yadav." [level=1] [ref=e25]:
+          - text: Shubham
+          - generic [ref=e26]: Yadav.
+        - paragraph [ref=e27]: QA Automation Engineer / SDET / AI-Assisted Testing
+        - paragraph [ref=e28]: I build thoughtful test strategies and dependable automation for web and API products, combining hands-on QA fundamentals with modern tooling.
+        - generic [ref=e29]:
+          - link "Explore projects" [ref=e30] [cursor=pointer]:
+            - /url: "#projects"
+            - text: Explore projects
+            - generic [aria-hidden] [ref=e31]: ↗
+          - link "Download resume" [ref=e32] [cursor=pointer]:
+            - /url: resume.html
+        - generic [ref=e35]:
+          - link "LinkedIn" [ref=e36] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/shubham-yadav-qa-engineer
+            - text: LinkedIn ↗
+          - link "GitHub" [ref=e37] [cursor=pointer]:
+            - /url: https://github.com/shubhamyadav-qa
+            - text: GitHub ↗
+      - generic "Illustration of a quality assurance test run" [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: RUN_042
+          - generic [ref=e41]: ALL CHECKS PASSING
+        - generic [ref=e43]: $ test --suite=web-core
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]: ✓
+            - generic [ref=e47]: Authentication flow
+            - generic [ref=e48]: 1.24s
+          - generic [ref=e49]:
+            - generic [ref=e50]: ✓
+            - generic [ref=e51]: Search & filters
+            - generic [ref=e52]: 0.86s
+          - generic [ref=e53]:
+            - generic [ref=e54]: ✓
+            - generic [ref=e55]: Cart regression
+            - generic [ref=e56]: 2.01s
+          - generic [ref=e57]:
+            - generic [ref=e58]: ✓
+            - generic [ref=e59]: API contract
+            - generic [ref=e60]: 0.42s
+        - generic [ref=e61]:
+          - generic [ref=e62]: 4 tests
+          - generic [ref=e63]: ·
+          - generic [ref=e64]: 0 failures
+          - generic [ref=e65]: QUALITYBY DESIGN
+        - generic [ref=e67]: 01 / 07
+      - generic [ref=e68]:
+        - generic [ref=e69]: BUILD CONFIDENCE. SHIP WITH CLARITY.
+        - link "SCROLL TO EXPLORE" [ref=e70] [cursor=pointer]:
+          - /url: "#about"
+          - text: SCROLL TO EXPLORE ↓
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: 01 / ABOUT
+        - heading [level=2] [ref=e74]:
+          - text: Good softwareearns
+          - emphasis [ref=e75]: trust.
+      - generic [ref=e76]:
+        - paragraph [ref=e77]:
+          - text: I’m a QA Automation Engineer with
+          - strong [ref=e78]: 1.3+ years of experience
+          - text: helping teams ship more reliable software.
+        - paragraph [ref=e79]: My work brings together exploratory and functional testing, maintainable browser automation, and API validation. I care about understanding user journeys, catching risk early, and making test feedback useful to the whole team.
+        - paragraph [ref=e80]: Based in Mumbai / Noida, I’m continuing to grow across modern automation and AI-assisted quality engineering. I hold a Bachelor of Computer Applications (BCA).
+        - link "More about my experience" [ref=e81] [cursor=pointer]:
+          - /url: "#experience"
+          - text: More about my experience
+          - generic [aria-hidden] [ref=e82]: ↗
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - paragraph [ref=e87]: 02 / TOOLKIT
+          - heading [level=2] [ref=e88]:
+            - text: Tools for
+            - emphasis [ref=e89]: better testing.
+        - paragraph [ref=e90]: A practical toolkit across quality strategy, automation, APIs, delivery, and emerging AI workflows.
+      - generic [ref=e91]:
+        - article [ref=e92]:
+          - text: A
+          - heading "Quality practice" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Test planning, risk-based coverage, clear feedback.
+          - generic [ref=e95]:
+            - generic [ref=e96]: Manual testing
+            - generic [ref=e97]: Functional
+            - generic [ref=e98]: Regression
+            - generic [ref=e99]: Smoke
+            - generic [ref=e100]: Integration
+            - generic [ref=e101]: UAT
+            - generic [ref=e102]: Agile / Scrum
+            - generic [ref=e103]: Jira
+        - article [ref=e104]:
+          - text: B
+          - heading "UI automation" [level=3] [ref=e105]
+          - paragraph [ref=e106]: Readable browser tests designed to evolve.
+          - generic [ref=e107]:
+            - generic [ref=e108]: Selenium
+            - generic [ref=e109]: Java
+            - generic [ref=e110]: Playwright
+            - generic [ref=e111]: JavaScript
+            - generic [ref=e112]: TypeScript
+            - generic [ref=e113]: TestNG
+            - generic [ref=e114]: Maven
+            - generic [ref=e115]: Page Object Model
+            - generic [ref=e116]: Hybrid frameworks
+        - article [ref=e117]:
+          - text: C
+          - heading "API & data" [level=3] [ref=e118]
+          - paragraph [ref=e119]: Validate service behavior and data contracts.
+          - generic [ref=e120]:
+            - generic [ref=e121]: REST Assured
+            - generic [ref=e122]: Postman
+            - generic [ref=e123]: API testing
+            - generic [ref=e124]: SQL
+        - article [ref=e125]:
+          - text: D
+          - heading "Delivery & AI" [level=3] [ref=e126]
+          - paragraph [ref=e127]: Bring quality checks into modern team workflows.
+          - generic [ref=e128]:
+            - generic [ref=e129]: Git / GitHub
+            - generic [ref=e130]: GitHub Actions
+            - generic [ref=e131]: Jenkins
+            - generic [ref=e132]: GitHub Copilot
+            - generic [ref=e133]: Cursor
+            - generic [ref=e134]: LLMs
+            - generic [ref=e135]: MCP
+            - generic [ref=e136]: AI agents
+            - generic [ref=e137]: Prompt engineering
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - paragraph [ref=e141]: 03 / SELECTED WORK
+          - heading [level=2] [ref=e142]:
+            - text: Built around
+            - emphasis [ref=e143]: confidence.
+        - link "Browse GitHub" [ref=e144] [cursor=pointer]:
+          - /url: https://github.com/shubhamyadav-qa?tab=repositories
+          - text: Browse GitHub
+          - generic [aria-hidden] [ref=e145]: ↗
+      - generic [ref=e146]:
+        - article [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e149]: 01 — BROWSER AUTOMATION
+            - generic [ref=e150]: "{ }"
+          - heading "Playwright JavaScript Automation Framework" [level=3] [ref=e151]: Playwright JavaScriptAutomation Framework
+          - paragraph [ref=e152]: A browser automation foundation for readable, repeatable end-to-end checks across critical user journeys.
+          - list [ref=e153]:
+            - listitem [ref=e154]: +Reusable page objects and test helpers
+            - listitem [ref=e155]: +Organized test suites and assertions
+            - listitem [ref=e156]: +Designed for CI-ready execution
+          - generic [ref=e157]:
+            - generic [ref=e158]: PLAYWRIGHT · JAVASCRIPT · NODE.JS
+            - link "GitHub" [ref=e159] [cursor=pointer]:
+              - /url: https://github.com/shubhamyadav-qa?tab=repositories
+              - text: GitHub ↗
+        - article [ref=e160]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: 02 — WEB AUTOMATION
+            - generic [ref=e163]: ◫
+          - heading "Selenium Java Hybrid Automation Framework" [level=3] [ref=e164]: Selenium Java HybridAutomation Framework
+          - paragraph [ref=e165]: A modular framework concept combining UI automation with shared utilities and maintainable test structure.
+          - list [ref=e166]:
+            - listitem [ref=e167]: +Page Object Model organization
+            - listitem [ref=e168]: +TestNG suites and Maven workflow
+            - listitem [ref=e169]: +Reusable configuration and reporting layers
+          - generic [ref=e170]:
+            - generic [ref=e171]: SELENIUM · JAVA · TESTNG · MAVEN
+            - link "GitHub" [ref=e172] [cursor=pointer]:
+              - /url: https://github.com/shubhamyadav-qa?tab=repositories
+              - text: GitHub ↗
+        - article [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]: 03 — API QUALITY
+            - generic [ref=e176]: ↔
+          - heading "REST API Automation" [level=3] [ref=e177]
+          - paragraph [ref=e178]: Service-level checks focused on validating responses, status codes, and expected API behavior.
+          - list [ref=e179]:
+            - listitem [ref=e180]: +REST Assured request and response validation
+            - listitem [ref=e181]: +Positive and negative scenario coverage
+            - listitem [ref=e182]: +Assertions designed for actionable failures
+          - generic [ref=e183]:
+            - generic [ref=e184]: REST ASSURED · JAVA · API TESTING
+            - link "GitHub" [ref=e185] [cursor=pointer]:
+              - /url: https://github.com/shubhamyadav-qa?tab=repositories
+              - text: GitHub ↗
+        - article [ref=e186]:
+          - generic [ref=e187]:
+            - generic [ref=e188]: 04 — DATA & AUTOMATION
+            - generic [ref=e189]: ▦
+          - heading "RBI Bank Holiday Automation" [level=3] [ref=e190]: RBI Bank HolidayAutomation
+          - paragraph [ref=e191]: A test automation concept for checking bank holiday information against expected dates and regional calendars.
+          - list [ref=e192]:
+            - listitem [ref=e193]: +Date and holiday verification scenarios
+            - listitem [ref=e194]: +Structured test data for repeatable checks
+            - listitem [ref=e195]: +Clear handling of edge cases
+          - generic [ref=e196]:
+            - generic [ref=e197]: AUTOMATION · TEST DATA · VALIDATION
+            - link "GitHub" [ref=e198] [cursor=pointer]:
+              - /url: https://github.com/shubhamyadav-qa?tab=repositories
+              - text: GitHub ↗
+        - article [ref=e199]:
+          - generic [ref=e200]:
+            - generic [ref=e201]: 05 — EMERGING PRACTICE
+            - generic [ref=e202]: ✳
+          - heading "AI-Assisted QA Testing" [level=3] [ref=e203]
+          - paragraph [ref=e204]: A human-led workflow exploring AI support for test analysis, drafting, and investigation.
+          - list [ref=e205]:
+            - listitem [ref=e206]: +Prompts for scenarios and test data
+            - listitem [ref=e207]: +Automation coding assistance
+            - listitem [ref=e208]: +Failure analysis with engineer review
+          - generic [ref=e209]:
+            - generic [ref=e210]: LLMS · COPILOT · CURSOR · MCP
+            - link "Explore approach" [ref=e211] [cursor=pointer]:
+              - /url: "#ai-testing"
+              - text: Explore approach ↓
+      - paragraph [ref=e212]: Project summaries describe portfolio work areas. See GitHub for available public repositories.
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - paragraph [ref=e217]: 04 / SYSTEM DESIGN
+          - heading [level=2] [ref=e218]:
+            - text: An automation framework,
+            - emphasis [ref=e219]: layer by layer.
+        - paragraph [ref=e220]: Select a layer to see how it contributes to reliable, maintainable test coverage.
+      - generic [ref=e221]:
+        - group "Interactive automation framework layers" [ref=e222]:
+          - button "01 Test layer ●" [ref=e223] [cursor=pointer]:
+            - generic [ref=e224]: "01"
+            - generic [ref=e225]: Test layer
+            - generic [ref=e226]: ●
+          - button "02 Page object layer ●" [ref=e227] [cursor=pointer]:
+            - generic [ref=e228]: "02"
+            - generic [ref=e229]: Page object layer
+            - generic [ref=e230]: ●
+          - button "03 Utility layer ●" [ref=e231] [cursor=pointer]:
+            - generic [ref=e232]: "03"
+            - generic [ref=e233]: Utility layer
+            - generic [ref=e234]: ●
+          - button "04 Test data layer ●" [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: "04"
+            - generic [ref=e237]: Test data layer
+            - generic [ref=e238]: ●
+          - button "05 API layer ●" [ref=e239] [cursor=pointer]:
+            - generic [ref=e240]: "05"
+            - generic [ref=e241]: API layer
+            - generic [ref=e242]: ●
+          - button "06 Reporting layer ●" [ref=e243] [cursor=pointer]:
+            - generic [ref=e244]: "06"
+            - generic [ref=e245]: Reporting layer
+            - generic [ref=e246]: ●
+          - button "07 CI / CD layer ●" [ref=e247] [cursor=pointer]:
+            - generic [ref=e248]: "07"
+            - generic [ref=e249]: CI / CD layer
+            - generic [ref=e250]: ●
+        - generic [ref=e251]:
+          - generic [ref=e252]:
+            - generic [ref=e253]: SELECTED COMPONENT
+            - generic [ref=e254]: FRAMEWORK / 01
+          - paragraph [ref=e255]: Test layer
+          - paragraph [ref=e256]: Holds readable scenarios and assertions that express expected behavior from a user's point of view.
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - text: INPUT
+              - generic [ref=e259]: Requirements
+            - generic [ref=e260]:
+              - text: OUTPUT
+              - generic [ref=e261]: Assertions
+    - generic [ref=e262]:
+      - generic [ref=e263]:
+        - paragraph [ref=e264]: 05 / AI-ASSISTED TESTING
+        - heading [level=2] [ref=e265]:
+          - text: AI can speed up the work.
+          - emphasis [ref=e266]: Judgment stays human.
+      - generic [ref=e267]:
+        - paragraph [ref=e268]: Used thoughtfully, AI tools can help QA engineers move faster from ambiguous requirements to useful test feedback, while people remain accountable for coverage and decisions.
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - generic [ref=e271]: "01"
+            - paragraph [ref=e272]: Requirement analysis
+          - generic [ref=e273]:
+            - generic [ref=e274]: "02"
+            - paragraph [ref=e275]: Test scenario generation
+          - generic [ref=e276]:
+            - generic [ref=e277]: "03"
+            - paragraph [ref=e278]: Test case generation
+          - generic [ref=e279]:
+            - generic [ref=e280]: "04"
+            - paragraph [ref=e281]: Test data generation
+          - generic [ref=e282]:
+            - generic [ref=e283]: "05"
+            - paragraph [ref=e284]: Automation code assistance
+          - generic [ref=e285]:
+            - generic [ref=e286]: "06"
+            - paragraph [ref=e287]: Failure analysis
+          - generic [ref=e288]:
+            - generic [ref=e289]: "07"
+            - paragraph [ref=e290]: Defect analysis
+          - generic [ref=e291]:
+            - generic [ref=e292]: "08"
+            - paragraph [ref=e293]: QA documentation
+        - generic [ref=e294]:
+          - generic [ref=e295]: TOOLS & APPROACHES
+          - generic [ref=e296]: GitHub Copilot
+          - generic [ref=e297]: Cursor
+          - generic [ref=e298]: LLMs
+          - generic [ref=e299]: MCP
+          - generic [ref=e300]: AI Agents
+          - generic [ref=e301]: Prompt Engineering
+    - generic [ref=e303]:
+      - generic [ref=e304]:
+        - paragraph [ref=e305]: 06 / EXPERIENCE
+        - heading [level=2] [ref=e306]:
+          - text: Quality in
+          - emphasis [ref=e307]: every release.
+        - generic [ref=e308]:
+          - strong [ref=e309]: 1.3+
+          - generic [ref=e310]: YEARS INQUALITY ASSURANCE
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]: QA ENGINEERING
+          - generic [ref=e314]: BCA · BACHELOR OF COMPUTER APPLICATIONS
+        - paragraph [ref=e315]: Hands-on experience across testing, automation, and collaborative delivery.
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e318]: "01"
+            - paragraph [ref=e319]: Manual and functional testing of user-facing workflows
+          - generic [ref=e320]:
+            - generic [ref=e321]: "02"
+            - paragraph [ref=e322]: Automation testing for repeatable regression coverage
+          - generic [ref=e323]:
+            - generic [ref=e324]: "03"
+            - paragraph [ref=e325]: API testing and service behavior validation
+          - generic [ref=e326]:
+            - generic [ref=e327]: "04"
+            - paragraph [ref=e328]: Defect reporting, triage, and clear communication
+          - generic [ref=e329]:
+            - generic [ref=e330]: "05"
+            - paragraph [ref=e331]: Regression testing and release confidence checks
+          - generic [ref=e332]:
+            - generic [ref=e333]: "06"
+            - paragraph [ref=e334]: Agile / Scrum collaboration and CI/CD workflows
+    - generic [ref=e335]:
+      - generic [ref=e336]:
+        - paragraph [ref=e337]: 07 / RESUME
+        - heading [level=2] [ref=e338]:
+          - text: Make the nextconversation
+          - emphasis [ref=e339]: count.
+        - paragraph [ref=e340]: Experience, skills, and contact details in one concise document.
+      - link "Download resume" [ref=e341] [cursor=pointer]:
+        - /url: resume.html
+        - text: Download resume
+        - generic [aria-hidden] [ref=e344]: ↓
+      - text: CV
+    - generic [ref=e346]:
+      - generic [ref=e347]:
+        - paragraph [ref=e348]: 08 / CONTACT
+        - heading [level=2] [ref=e349]:
+          - text: Let’s makequality
+          - emphasis [ref=e350]: visible.
+        - paragraph [ref=e351]: Interested in QA automation and testing opportunities? I’d be glad to connect.
+      - generic [ref=e352]:
+        - link "EMAIL yadav5257shubham@gmail.com ↗" [ref=e353] [cursor=pointer]:
+          - /url: mailto:yadav5257shubham@gmail.com
+          - generic [ref=e354]: EMAIL
+          - strong [ref=e355]: yadav5257shubham@gmail.com
+          - generic [ref=e356]: ↗
+        - link "LINKEDIN Connect with me ↗" [ref=e357] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/shubham-yadav-qa-engineer
+          - generic [ref=e358]: LINKEDIN
+          - strong [ref=e359]: Connect with me
+          - generic [ref=e360]: ↗
+        - link "GITHUB See my repositories ↗" [ref=e361] [cursor=pointer]:
+          - /url: https://github.com/shubhamyadav-qa
+          - generic [ref=e362]: GITHUB
+          - strong [ref=e363]: See my repositories
+          - generic [ref=e364]: ↗
+  - contentinfo [ref=e365]:
+    - link "SY SHUBHAM YADAV" [ref=e366] [cursor=pointer]:
+      - /url: "#home"
+      - generic [ref=e367]: SY
+      - generic [ref=e368]: SHUBHAM YADAV
+    - generic [ref=e369]: QA AUTOMATION ENGINEER · MUMBAI / NOIDA
+    - 'button "Optional: QA Racing Mode" [ref=e370] [cursor=pointer]': "Optional: QA Racing Mode ↗"
+    - generic [ref=e371]: © 2026 SHUBHAM YADAV
