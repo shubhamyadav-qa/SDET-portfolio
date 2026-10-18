@@ -1,41 +1,43 @@
 # Shubham Yadav | QA Automation Portfolio
 
-A responsive, accessible static portfolio built with HTML, CSS, and vanilla JavaScript. It has no build step or third-party runtime dependencies and can be hosted on GitHub Pages.
+A responsive, accessible portfolio built with semantic HTML, CSS, and vanilla JavaScript. There is no build step or third-party runtime dependency. The visual system pairs midnight black and navy with selective gold and blue accents. The provided portrait is stored locally at `assets/shubham-yadav-portrait.png`; the image itself is preserved and its unrelated lettering is visually subdued in the hero.
 
 ## Run locally
 
-Open `index.html` in a browser, or serve the folder with any static web server. For example, from this folder:
+Open `index.html` in a browser, or serve the project root with any static web server. For example, in PowerShell:
 
 ```powershell
-npx --yes http-server .
+python -m http.server 8000
 ```
 
-The portfolio's Download Resume buttons link to the supplied public Google Drive resume file.
-
-## Deploy with GitHub Pages
-
-1. Create a GitHub repository, for example `shubhamyadav-qa.github.io` for a user site, or any repository name for a project site.
-2. Add the files in this folder to the repository and push them to the `main` branch.
-3. In the repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/(root)` folder, then click **Save**.
-6. Wait for the Pages deployment to complete. A user site is published at `https://shubhamyadav-qa.github.io/`; a project site is published at `https://shubhamyadav-qa.github.io/<repository-name>/`.
-
-No base-path configuration is needed: the site uses relative links for local assets. Subsequent pushes to the selected branch publish updates automatically.
+Then visit `http://localhost:8000`.
 
 ## Resume
 
-Both **Download resume** buttons use the supplied Google Drive file's direct-download endpoint. The file must remain publicly accessible to visitors for the link to work.
+The project does not contain the original resume PDF. `resume.html` is a print-friendly portfolio profile with a **Print / Save as PDF** action. The Google Drive resume URL previously used by this site redirects to Google sign-in, so it is not presented as a verified public download. Replace the print-friendly profile with the current source resume or a publicly accessible PDF when available.
 
-## Project repositories
+The supplied profile and resume versions differ on the Innovative Business Solutions title (QA Automation Testing Intern / QA Automation Engineer) and end date: the profile lists September 2026, while the resume lists Present. The site uses the internship title to keep the employment type explicit, attributes the displayed date to the profile, and calls out both conflicts for confirmation rather than merging the claims.
 
-The portfolio links directly to the following repositories:
+## Project evidence
 
-- [Selenium with TestNG](https://github.com/shubhamyadav-qa/qa-automation-framework-selenium-java)
-- [RBI Bank Holiday Automation](https://github.com/shubhamyadav-qa/RBI.BankHolidayAutomation)
-- [SauceDemo Playwright Automation](https://github.com/shubhamyadav-qa/hypd-sdet-ui-automation-assignment)
-- [Shubhamqaeasy](https://github.com/shubhamyadav-qa/Shubhamqaeasy)
-- [LLM-MCP-with-Playwrightjavascript](https://github.com/shubhamyadav-qa/LLM-MCP-with_Playwrightjavascript)
-- [HYPD API Automation](https://github.com/shubhamyadav-qa/hypd-api-automation)
+Project descriptions link to the public repository documentation and identify professional workflow contexts separately from independent practice repositories. No portfolio metrics or test execution results are inferred from repository descriptions.
 
-Project descriptions are limited to details stated in the repository pages and READMEs. No live demo URLs were supplied.
+- [SauceDemo Playwright assignment](https://github.com/shubhamyadav-qa/hypd-sdet-ui-automation-assignment)
+- [HYPD API automation](https://github.com/shubhamyadav-qa/hypd-api-automation)
+- [VTiger CRM Playwright tests](https://github.com/shubhamyadav-qa/LLM-MCP-with_Playwrightjavascript)
+- [Selenium with Java repository](https://github.com/shubhamyadav-qa/qa-automation-framework-selenium-java)
+- [GitHub profile](https://github.com/shubhamyadav-qa)
+
+The supplied `hypd-sdet-ui-automation` URL could not be found during inspection (404); the accessible SauceDemo assignment repository is linked instead. No project demo URL was provided.
+
+## Deploy with GitHub Pages
+
+This repository is a static site with its entry point at the repository root. No build command or deployment workflow is required.
+
+1. Push the site files to the `main` branch.
+2. In the GitHub repository, open **Settings → Pages**.
+3. Under **Build and deployment**, select **Deploy from a branch**.
+4. Choose `main` and `/(root)`, then save.
+5. Wait for the Pages deployment to complete. For this repository, the expected project-site URL is `https://shubhamyadav-qa.github.io/SDET-portfolio/` if GitHub Pages is enabled.
+
+Relative local links work from the repository root. If a custom domain or Pages configuration is added later, update the canonical and Open Graph URL in `index.html`.
