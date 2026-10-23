@@ -56,13 +56,14 @@ filterButtons.forEach((button) => {
 });
 
 const architectureDetails = {
-  specs: ['LAYER 01 / TEST SPECIFICATIONS', 'Keep intent visible: describe the user or service behavior under test and the result that matters.'],
-  runner: ['LAYER 02 / TEST RUNNER', 'Organize discovery and execution. Repository examples use TestNG or Playwright; exact runner settings belong to each project.'],
-  adapters: ['LAYER 03 / PAGE OBJECTS & API CLIENTS', 'Encapsulate browser interactions and reusable service requests so test intent is less coupled to implementation detail.'],
-  shared: ['LAYER 04 / SHARED CONFIGURATION & DATA', 'Keep configuration, fixtures, and helpers explicit and reusable. Isolate tests and environments where supported by the project.'],
-  application: ['LAYER 05 / APPLICATION UNDER TEST', 'Exercise the browser journey or service endpoint that matches the risk being tested.'],
-  assertions: ['LAYER 06 / ASSERTIONS & VALIDATION', 'Compare actual behavior with an expected result, including response status, payload, schema, and business rules where relevant.'],
-  reports: ['LAYER 07 / REPORTS & FAILURE ANALYSIS', 'Use execution output and evidence to understand what failed and investigate the cause; a report does not replace that investigation.']
+  specs: ['LAYER 01 / TEST SPECIFICATIONS', 'Describe CRM behavior with clear preconditions, actions, expected results, and assertions. Keep positive, negative, boundary, and regression cases traceable to business risks.'],
+  runner: ['LAYER 02 / TEST RUNNER', 'Use Playwright Test configuration, fixtures, hooks, and controlled execution. Keep JavaScript and TypeScript specs in separate implementations rather than mixing their test files.'],
+  pages: ['LAYER 03 / PAGE OBJECT MODEL', 'Encapsulate Salesforce page locators and UI interactions behind reusable page classes so tests express intent instead of repeating browser mechanics.'],
+  workflows: ['LAYER 04 / BUSINESS WORKFLOWS', 'Compose reusable CRM operations such as creating a lead, assigning it, converting it, and verifying related records across a complete user journey.'],
+  utilities: ['LAYER 05 / UTILITIES', 'Centralize safe test data generation, environment configuration, logging, and shared helpers. Keep data explicit and tests isolated.'],
+  api: ['LAYER 06 / API LAYER', 'Where a Salesforce API environment is configured, validate requests, response status and payload, business rules, and consistency with UI-visible records. This layer is planned, not verified here.'],
+  reports: ['LAYER 07 / REPORTING', 'Capture HTML results, screenshots, traces, and failure diagnostics when configured. Use artifacts to investigate failures, not as a substitute for root-cause analysis.'],
+  cicd: ['LAYER 08 / CI/CD', 'Run checks from the configured pipeline with explicit environment and secret management. A Salesforce-specific pipeline is a planned enhancement; existing repository workflows belong to separate projects.']
 };
 
 const architectureButtons = document.querySelectorAll('.flow-node');

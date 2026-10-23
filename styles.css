@@ -134,9 +134,6 @@ button { color: inherit; font: inherit; }
 .experience-entry { padding: 25px 28px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); }
 .experience-top { display: flex; justify-content: space-between; gap: 15px; padding-bottom: 14px; border-bottom: 1px solid var(--line); color: var(--quiet); font: 400 8px var(--mono); letter-spacing: .06em; }
 .experience-entry h3 { margin: 20px 0 2px; font: 500 23px var(--display); }
-.experience-dates { margin: 0; color: var(--cyan); font: 400 10px var(--mono); }
-.experience-dates span { color: var(--red); }
-.experience-note { margin: 11px 0; color: var(--quiet); font-size: 9px; line-height: 1.7; }
 .experience-lead { margin: 19px 0 10px; color: var(--muted); font: 400 13px var(--display); }
 .responsibility-list { margin: 0; padding-left: 18px; color: #c0ccda; font-size: 11px; }
 .responsibility-list li { padding: 5px 0 5px 3px; }
@@ -150,7 +147,25 @@ button { color: inherit; font: inherit; }
 .project-card:hover { transform: translateY(-3px); border-color: var(--line-strong); background: var(--panel); }
 .project-card[hidden] { display: none; }
 .project-feature { border-color: #244d7c; background: linear-gradient(145deg, #10243d, #0c192a); }
-.project-professional { background: #0d1b2d; }
+.salesforce-project { grid-column: 1 / -1; padding: clamp(20px, 3vw, 34px); }
+.salesforce-project > h3 { max-width: 850px; font-size: clamp(25px, 3vw, 34px); }
+.salesforce-intro { max-width: 900px; }
+.salesforce-scenarios { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 10px 0 18px; }
+.scenario-card { min-width: 0; padding: 17px; border: 1px solid var(--line); border-radius: 5px; background: rgba(7, 17, 30, .55); }
+.scenario-card h4, .approach-card h4 { margin: 0 0 13px; font: 500 16px/1.35 var(--display); }
+.scenario-card > div { margin-top: 11px; }
+.scenario-card > div > span, .approach-label, .coverage-strip > span { color: var(--cyan); font: 400 8px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.scenario-card p, .approach-card p { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.75; }
+.coverage-strip { display: grid; grid-template-columns: 145px 1fr; gap: 14px; padding: 14px 16px; border-left: 2px solid var(--blue); background: rgba(19, 37, 60, .52); }
+.coverage-strip p { margin: 0; color: #c8d5e3; font-size: 10px; line-height: 1.7; }
+.implementation-approaches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+.approach-card { min-width: 0; padding: 17px; border: 1px solid var(--line); border-radius: 5px; background: rgba(8, 19, 33, .65); }
+.approach-card h4 { margin: 8px 0 7px; }
+.approach-card .approach-status { margin-top: 11px; color: var(--quiet); }
+.approach-card > a { display: inline-block; margin-top: 12px; color: var(--blue-bright); font-size: 10px; font-weight: 600; }
+.approach-card > a:hover { color: var(--cyan); }
+.project-status { max-width: 30%; color: var(--quiet); text-align: right; }
+.salesforce-project .project-bottom { align-items: start; }
 .project-concept { border-style: dashed; }
 .project-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--quiet); font: 400 8px var(--mono); letter-spacing: .06em; }
 .project-kind { color: var(--cyan); }
@@ -166,9 +181,12 @@ button { color: inherit; font: inherit; }
 .projects code { color: var(--cyan); font-size: .9em; }
 .architecture-section { border-block: 1px solid var(--line); background: var(--page-raised); }
 .architecture-card { overflow: hidden; border: 1px solid var(--line-strong); border-radius: 7px; background: var(--panel-soft); }
-.architecture-flow { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.architecture-flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .flow-node { position: relative; display: flex; min-width: 0; min-height: 145px; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 8px; padding: 17px 13px; border: 0; border-right: 1px solid var(--line); color: var(--ink); background: transparent; text-align: left; cursor: pointer; transition: background .2s; }
 .flow-node:last-child { border-right: 0; }
+.flow-node:nth-child(4n) { border-right: 0; }
+.flow-node:nth-child(4n)::after { display: none; }
+.flow-node:nth-child(n+5) { border-top: 1px solid var(--line); }
 .flow-node:not(:last-child)::after { position: absolute; z-index: 1; top: 31px; right: -5px; width: 9px; height: 9px; border-top: 1px solid var(--blue-bright); border-right: 1px solid var(--blue-bright); background: var(--panel-soft); content: ""; transform: rotate(45deg); }
 .flow-node:hover, .flow-node.is-active { background: #13243a; }
 .flow-node > span { color: var(--cyan); font: 400 8px var(--mono); }
@@ -238,11 +256,6 @@ button { color: inherit; font: inherit; }
   .wordmark-mark { width: 32px; height: 32px; }
   .header-resume { padding-inline: 9px; }
   .hero { gap: 42px; }
-  .architecture-flow { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .flow-node:nth-child(4) { border-right: 0; }
-  .flow-node:nth-child(4)::after { display: none; }
-  .flow-node:nth-child(n+5) { border-top: 1px solid var(--line); }
-  .flow-node:nth-child(7) { border-right: 0; }
   .architecture-notes, .architecture-detail { grid-template-columns: 190px 1fr; }
 }
 @media (max-width: 860px) {
@@ -303,15 +316,18 @@ button { color: inherit; font: inherit; }
   .experience-entry { padding: 19px; }
   .experience-top { flex-direction: column; gap: 5px; }
   .project-card { min-height: 0; padding: 19px; }
+  .salesforce-project { padding: 19px; }
+  .salesforce-scenarios, .implementation-approaches { grid-template-columns: 1fr; }
+  .coverage-strip { grid-template-columns: 1fr; gap: 6px; }
+  .salesforce-project .project-bottom { flex-direction: column; align-items: start; }
+  .salesforce-project .project-tech, .project-status { max-width: none; text-align: left; }
   .project-filters { gap: 6px; margin-top: 0; }
   .filter-button { padding: 6px 9px; font-size: 9px; }
   .architecture-flow { grid-template-columns: 1fr; }
   .flow-node { min-height: 78px; flex-direction: row; align-items: center; padding: 12px 15px; border-right: 0; border-bottom: 1px solid var(--line); }
   .flow-node:nth-child(n+2) { border-top: 0; }
-  .flow-node:nth-child(4) { border-right: 0; }
   .flow-node:last-child { border-bottom: 0; }
-  .flow-node:not(:last-child)::after { top: auto; right: 19px; bottom: -5px; transform: rotate(135deg); }
-  .flow-node:nth-child(4)::after { display: block; }
+  .flow-node:not(:last-child)::after { display: block; top: auto; right: 19px; bottom: -5px; transform: rotate(135deg); }
   .flow-node strong { flex: 1; }
   .flow-node small { width: 105px; }
   .architecture-detail, .architecture-notes { grid-template-columns: 1fr; gap: 7px; padding: 15px; }

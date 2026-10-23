@@ -16,11 +16,13 @@ Then visit `http://localhost:8000`.
 
 The project does not contain the original resume PDF. `resume.html` is a print-friendly portfolio profile with a **Print / Save as PDF** action. The Google Drive resume URL previously used by this site redirects to Google sign-in, so it is not presented as a verified public download. Replace the print-friendly profile with the current source resume or a publicly accessible PDF when available.
 
-The supplied profile and resume versions differ on the Innovative Business Solutions title (QA Automation Testing Intern / QA Automation Engineer) and end date: the profile lists September 2026, while the resume lists Present. The site uses the internship title to keep the employment type explicit, attributes the displayed date to the profile, and calls out both conflicts for confirmation rather than merging the claims.
+Employment history is not presented in the portfolio. The resume page focuses on verified skills, education, and independent project evidence.
 
 ## Project evidence
 
-Project descriptions link to the public repository documentation and identify professional workflow contexts separately from independent practice repositories. No portfolio metrics or test execution results are inferred from repository descriptions.
+The Salesforce CRM case study is a hands-on scenario design and implementation roadmap. It is not a claim of employment, a completed Salesforce integration, or a tested Salesforce deployment. It covers planned lead, contact/account, opportunity, search, validation, access-control, regression, and future API/UI consistency scenarios. Its hybrid architecture and separate JavaScript/TypeScript approaches are described in the portfolio; Salesforce-specific execution, API checks, reporting artifacts, and CI/CD still require implementation and environment verification.
+
+Related repository descriptions link to existing project documentation. The CRM repository is for VTiger using JavaScript; the TypeScript Playwright repository is for SauceDemo. Neither is presented as a Salesforce implementation. No portfolio metrics, test execution results, or Salesforce live demo are inferred from repository descriptions.
 
 - [SauceDemo Playwright assignment](https://github.com/shubhamyadav-qa/hypd-sdet-ui-automation-assignment)
 - [HYPD API automation](https://github.com/shubhamyadav-qa/hypd-api-automation)
@@ -28,7 +30,7 @@ Project descriptions link to the public repository documentation and identify pr
 - [Selenium with Java repository](https://github.com/shubhamyadav-qa/qa-automation-framework-selenium-java)
 - [GitHub profile](https://github.com/shubhamyadav-qa)
 
-The supplied `hypd-sdet-ui-automation` URL could not be found during inspection (404); the accessible SauceDemo assignment repository is linked instead. No project demo URL was provided.
+No Salesforce project repository or live demo URL was provided.
 
 ## Deploy with GitHub Pages
 
